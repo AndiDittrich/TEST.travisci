@@ -5,10 +5,9 @@ language: bash
 addons:
   ssh_known_hosts: localhost
 
-# skip dependency management
-install: true
-
-# generate new ssh key
+# create temporary ssh key
+install: 
+  - bash ssh-setup.sh
 
 script:
   # run test script
