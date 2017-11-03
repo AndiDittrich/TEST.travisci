@@ -15,9 +15,14 @@ echo "SSHD Config"
 echo "---------------------------------------------------------"
 cat /etc/ssh/sshd_config
 
-# services
-ps -AF
+# debug
+echo "KNOWN HOSTS"
+echo "---------------------------------------------------------"
+cat ~/.ssh/known_hosts
 
+echo "SERVICES"
+echo "---------------------------------------------------------"
+ps -AF
 
 echo "SSH TEST"
 echo "---------------------------------------------------------"

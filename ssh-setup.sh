@@ -31,3 +31,6 @@ Host travisci
   HostName localhost
   IdentityFile ~/.ssh/id_rsa
 EOF
+
+# add new key to known hosts
+ssh-keyscan -t rsa localhost >> ~/.ssh/known_hosts
