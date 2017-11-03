@@ -10,8 +10,12 @@ if [[ ! $TRAVIS ]]; then
     exit 1
 fi
 
+# debug
+echo "SSHD Config"
+cat /etc/ssh/sshd_config
+
 # create testfile
 echo "helloworld file" > /tmp/hello
 
 # show file via ssh
-ssh travisci "cat /tmp/hello"
+ssh -vvv travisci "cat /tmp/hello"
