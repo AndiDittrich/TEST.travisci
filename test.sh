@@ -10,7 +10,8 @@ if [[ ! $TRAVIS ]]; then
     exit 1
 fi
 
-echo "hello world";
+# create testfile
+echo "helloworld file" > /tmp/hello
 
-cat ~/.ssh/config
-cat ~/.ssh/authorized_keys
+# show file via ssh
+ssh travisci "cat /tmp/hello"
