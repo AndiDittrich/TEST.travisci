@@ -12,7 +12,15 @@ fi
 
 # debug
 echo "SSHD Config"
+echo "---------------------------------------------------------"
 cat /etc/ssh/sshd_config
+
+# services
+ps -AF
+
+
+echo "SSH TEST"
+echo "---------------------------------------------------------"
 
 # create testfile
 echo "helloworld file" > /tmp/hello
