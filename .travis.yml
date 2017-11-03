@@ -1,0 +1,15 @@
+os: linux
+
+language: python
+
+addons:
+  ssh_known_hosts: localhost
+
+# skip dependency management
+install: true
+
+# generate new ssh key
+
+script:
+  # run test script
+  - test.sh
