@@ -11,7 +11,7 @@ if [[ ! $TRAVIS ]]; then
 fi
 
 # create .ssh dir
-mkkdir -p ~/.ssh
+mkdir -p ~/.ssh
 
 # permissions
 chmod 0700 ~/.ssh
