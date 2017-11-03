@@ -1,6 +1,6 @@
 os: linux
 
-language: python
+language: bash
 
 addons:
   ssh_known_hosts: localhost
@@ -12,4 +12,4 @@ install: true
 
 script:
   # run test script
-  - test.sh
+  - bash test.sh
