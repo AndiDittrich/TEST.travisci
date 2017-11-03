@@ -1,14 +1,7 @@
-os: linux
-
-language: bash
-
 addons:
   ssh_known_hosts: localhost
 
-# create temporary ssh key
-install: 
-  - bash ssh-setup.sh
-
 script:
-  # run test script
-  - bash test.sh
+  - ssh-keygen -N '' -f ~/.ssh/id_rsa
+  - cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  - ssh localhost cat /etc/issue
