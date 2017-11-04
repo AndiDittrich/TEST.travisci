@@ -1,5 +1,6 @@
 addons:
   ssh_known_hosts: localhost
+sudo: required
 
 script:
   - ssh-keygen -N '' -f ~/.ssh/id_rsa
